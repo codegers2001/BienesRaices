@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <title>Bienes Raices | contacto</title>
+     <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+     <header class="header">
+          <div class="contenedor header__contenido">
+               <div class="header__barra">
+                    <a href="/">
+                         <img src="build/img/logo.svg" alt="logo">
+                    </a>
+                    <div class="mobile__menu">
+                         <img src="build/img/barras.svg" alt="icono menu responsive">
+                    </div>
+                    <nav class="header__navegacion">
+                         <ul class="header__lista">
+                              <li class="header__item">
+                                   <a href="nosotros.html">Nosotros</a>
+                              </li>
+                              <li class="header__item">
+                                   <a href="anuncios.html">Anuncios</a>
+                              </li>
+                              <li class="header__item">
+                                   <a href="blogs.html">Blogs</a>
+                              </li>
+                              <li class="header__item">
+                                   <a href="contacto.html">Contacto</a>
+                              </li>
+                         </ul>
+                    </nav>
+               </div>
+          </div>
+     </header>
+
+     <main class="contenedor seccion formulario">
+          <h1 class="titulo">Contacto</h1>
+          <picture>
+               <source srcset="build/img/destacada3.webp" type="image/webp">
+               <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+               <img loading="lazy" src="build/img/destacada3.jpg" alt="Imagen Contacto">
+          </picture>
+          <h2 class="titulo">Llene el Formulario de Contacto</h2>
+          <form action="" class="formulario__form">
+               <fieldset>
+                    <legend>Información Personal</legend>
+
+                    <label for="nombre">Nombre <span>*</span></label>
+                    <input type="text" placeholder="Tu nombre" id="nombre">
+
+                    <label for="correo">Correo Electrónico <span>*</span></label>
+                    <input type="email" placeholder="Tu correo electrónico" id="correo">
+
+                    <label for="telefono">Teléfono <span>*</span></label>
+                    <input type="tel" placeholder="Tu telefono" id="telefono">
+
+                    <label for="mensaje">Mensaje <span>*</span></label>
+                    <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+               </fieldset>
+
+               <fieldset>
+                    <legend>Información Sobre la Propiedad</legend>
+
+                    <label for="opciones">Vende o Compra <span>*</span></label>
+                    <select name="" id="opciones">
+                         <option value="" disabled selected>--Seleccione uno--</option>
+                         <option value="compra">Compra</option>
+                         <option value="vende">Vende</option>
+                    </select>
+
+                    <label for="cantidad">Cantidad <span>*</span></label>
+                    <input type="number" id="cantidad">
+               </fieldset>
+
+               <fieldset>
+                    <legend>Contacto</legend>
+
+                    <p>Como desea ser contactado</p>
+                    <div class="formulario__div">
+                         <label for="phone">Teléfono</label>
+                         <input type="radio" placeholder="Tu telefono" id="phone" name="contacto">
+
+                         <label for="email">E-mail</label>
+                         <input type="radio" placeholder="Tu E-mail" id="email" name="contacto">
+                    </div>
+                    <p>Si elijio telefono, escoja la fecha y hora</p>
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" placeholder="Escoja fecha" id="fecha">
+
+                    <label for="hora">Hora</label>
+                    <input type="time" placeholder="Escoja la hora" id="hora" min="09:00" max="19:00">
+               </fieldset>
+               <input type="submit" value="Enviar Formulario" class="boton boton__naranja formulario__btn">
+          </form>
+     </main>
+
+     <footer class="footer seccion">
+          <div class="contenedor footer__contenedor">
+               <nav class="footer__navegacion">
+                    <ul class="footer__lista">
+                         <li class="footer__item">
+                              <a href="nosotros.html">Nosotros</a>
+                         </li>
+                         <li class="footer__item">
+                              <a href="anuncios.html">Anuncios</a>
+                         </li>
+                         <li class="footer__item">
+                              <a href="blogs.html">Blogs</a>
+                         </li>
+                         <li class="footer__item">
+                              <a href="contacto.html">Contacto</a>
+                         </li>
+                    </ul>
+               </nav>
+               <p class="footer__copy">Todos los derechos reservados Bienes Raices &copy; 2023</p>
+          </div>
+     </footer>
+
+     <!-- dark mode -->
+     <div class="darkmode">
+          <div class="darkmode__contenido">
+               <button class="darkmode__button" id="darkmode__button">
+                    <i class="fas fa-moon"></i>
+               </button>
+          </div>
+     </div>
+
+     <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>

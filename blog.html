@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <title>Bienes Raices | blog</title>
+     <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+     <header class="header">
+          <div class="contenedor header__contenido">
+               <div class="header__barra">
+                    <a href="/">
+                         <img src="build/img/logo.svg" alt="logo">
+                    </a>
+                    <div class="mobile__menu">
+                         <img src="build/img/barras.svg" alt="icono menu responsive">
+                    </div>
+                    <nav class="header__navegacion">
+                         <ul class="header__lista">
+                              <li class="header__item">
+                                   <a href="nosotros.html">Nosotros</a>
+                              </li>
+                              <li class="header__item">
+                                   <a href="anuncios.html">Anuncios</a>
+                              </li>
+                              <li class="header__item">
+                                   <a href="blogs.html">Blogs</a>
+                              </li>
+                              <li class="header__item">
+                                   <a href="contacto.html">Contacto</a>
+                              </li>
+                         </ul>
+                    </nav>
+               </div>
+          </div>
+     </header>
+
+     <main class="seccion blog contenido-centrado">
+          <h2 class="titulo">Nombre Blog 1</h2>
+          <picture>
+               <source srcset="build/img/destacada.webp" type="image/webp">
+               <source srcset="build/img/destacada.jpg" type="image/jpeg">
+               <img loading="lazy" src="build/img/destacada.jpg" alt="anuncio">
+          </picture>
+          <div class="blog__texto">
+               <h3>Terraza en el Techo de tu Casa</h3>
+               <p class="blog__fecha">Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum Lorem</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci saepe distinctio numquam labore
+                    harum dicta libero id magnam natus? Nulla molestiae incidunt repellendus, corrupti nihil libero ut
+                    suscipit dolore non!</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci saepe distinctio numquam labore
+                    harum dicta libero id magnam natus? Nulla molestiae incidunt repellendus, corrupti nihil libero ut
+                    suscipit dolore non!</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci saepe distinctio numquam labore
+                    harum dicta libero id magnam natus? Nulla molestiae incidunt repellendus, corrupti nihil libero ut
+                    suscipit dolore non!</p>
+               <div class="blog__tecnologias">
+                    <h4 class="blog__etiqueta">Etiquetas:</h4>
+                    <ul class="blog__lista">
+                         <button class="blog__tec">Web <span><i class="fa-brands fa-html5"></i></span></button>
+                         <button class="blog__tec">Like <span><i class="fa-solid fa-heart"></i></span></button>
+                         <button class="blog__tec">Compartir <span><i class="fa-solid fa-share"></i></span></button>
+                    </ul>
+               </div>
+          </div>
+     </main>
+
+     <footer class="footer seccion">
+          <div class="contenedor footer__contenedor">
+               <nav class="footer__navegacion">
+                    <ul class="footer__lista">
+                         <li class="footer__item">
+                              <a href="nosotros.html">Nosotros</a>
+                         </li>
+                         <li class="footer__item">
+                              <a href="anuncios.html">Anuncios</a>
+                         </li>
+                         <li class="footer__item">
+                              <a href="blogs.html">Blogs</a>
+                         </li>
+                         <li class="footer__item">
+                              <a href="contacto.html">Contacto</a>
+                         </li>
+                    </ul>
+               </nav>
+               <p class="footer__copy">Todos los derechos reservados Bienes Raices &copy; 2023</p>
+          </div>
+     </footer>
+
+     <!-- dark mode -->
+     <div class="darkmode">
+          <div class="darkmode__contenido">
+               <button class="darkmode__button" id="darkmode__button">
+                    <i class="fas fa-moon"></i>
+               </button>
+          </div>
+     </div>
+
+     <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>
